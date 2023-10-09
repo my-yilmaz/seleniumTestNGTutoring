@@ -10,7 +10,7 @@ public class TC_01 {
     @Test
     public void test01() {
         //1- https://www.amazon.com/ sayfasina gidelim
-        Driver.getDriver().get(ConfigReader.getProperty("AmazonURL"));
+        Driver.getDriver().get(ConfigReader.getProperty("amazonURL"));
         //2- arama kutusunu locate edelim
         //3- “Samsung headphones” ile arama yapalim
         AmazonPage amazonPage = new AmazonPage();
