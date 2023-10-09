@@ -8,7 +8,6 @@
 6 - git remote add origin <uzak repo linki>
 7 - git push --set-upstream origin branch-adi
 
-
 - Gunluk push islemi
 
 1 - git add .
