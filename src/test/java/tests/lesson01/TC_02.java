@@ -1,4 +1,4 @@
-package tests;
+package tests.lesson01;
 
 import org.openqa.selenium.Keys;
 import org.testng.Assert;

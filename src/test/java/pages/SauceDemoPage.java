@@ -13,20 +13,16 @@ public class SauceDemoPage {
 
     @FindBy(id = "user-name")
     public WebElement userNameBox;
-
-@FindBy(xpath = "//*[@id= 'password']")
+    @FindBy(xpath = "//*[@id= 'password']")
     public WebElement passWordBox;
-
-@FindBy(id = "login-button")
+    @FindBy(id = "login-button")
     public WebElement loginButonu;
-@FindBy(xpath = "//*[text()='Sauce Labs Backpack']")
+    @FindBy(xpath = "//*[text()='Sauce Labs Backpack']")
     public WebElement ilkUrun;
-@FindBy(id = "add-to-cart-sauce-labs-backpack")
+    @FindBy(id = "add-to-cart-sauce-labs-backpack")
     public WebElement addtoCartButonu;
-@FindBy(className = "shopping_cart_link")
+    @FindBy(className = "shopping_cart_link")
     public WebElement shoppingCart;
-
-@FindBy(id = "remove-sauce-labs-backpack")
+    @FindBy(id = "remove-sauce-labs-backpack")
     public WebElement removeButton;
-
 }
