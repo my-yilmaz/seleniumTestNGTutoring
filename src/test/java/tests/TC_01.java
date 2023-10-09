@@ -20,6 +20,5 @@ public class TC_01 {
         //5- Ilk urunu tiklayalim
         amazonPage.ilkUrun.click();
         Driver.closeDriver();
-        System.out.println("hello");
     }
 }
