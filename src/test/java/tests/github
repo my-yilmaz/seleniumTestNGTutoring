@@ -1,0 +1,22 @@
+- Branch olusturma -bir defaya mahsus-
+
+1 - git branch branch-adi    branch olusur
+2 - git checkout branch-adi   branclar arası gecıs
+3 - git branch                branch kontrol
+4 - git add .
+5 - git commit -m "mesaj"
+6 - git remote add origin <uzak repo linki>
+7 - git push --set-upstream origin branch-adi
+
+
+- Gunluk push islemi
+
+1 - git add .
+2 - git commit -m "mesaj"
+3 - git push
+
+- Branch merge islemi
+1 - git checkout main
+2 - git pull
+3 - git checkout branch-adi
+4 - git merge main
