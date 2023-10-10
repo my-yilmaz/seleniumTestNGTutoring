@@ -17,4 +17,6 @@ public class AmazonPage {
     public WebElement result;
     @FindBy(xpath = "(//span[@class='a-size-medium a-color-base a-text-normal'])[1]")
     public WebElement ilkUrun;
+    @FindBy(xpath = "//select[@id='searchDropdownBox']")
+    public WebElement allDropDownBox;
 }
