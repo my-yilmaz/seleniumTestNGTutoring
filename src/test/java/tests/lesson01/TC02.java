@@ -7,7 +7,7 @@ import pages.ZeroBankPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-public class TC_02 {
+public class TC02 {
     @Test
     public void test01() {
         //1. http://zero.webappsecurity.com sayfasina gidin
