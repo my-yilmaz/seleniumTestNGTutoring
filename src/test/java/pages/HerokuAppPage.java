@@ -16,4 +16,7 @@ public class HerokuAppPage {
     public WebElement checkBox2;
     @FindBy(xpath = "//h3[text()= 'Checkboxes']")
     public WebElement titleCheckboxes;
+    @FindBy(xpath = "//select[@id='dropdown']")
+    public WebElement dropDownMenu;
+
 }
