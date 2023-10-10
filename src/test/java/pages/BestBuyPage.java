@@ -13,7 +13,6 @@ public class BestBuyPage {
 
     @FindBy(xpath = "(//img[@class= 'logo'])[1]")
     public WebElement bestbuyLogo;
-
     @FindBy(xpath = "//button[text()= 'Français']")
     public WebElement francaisLink;
 

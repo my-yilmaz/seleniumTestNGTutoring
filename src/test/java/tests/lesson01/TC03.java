@@ -6,7 +6,7 @@ import pages.SauceDemoPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-public class TC_03 {
+public class TC03 {
     @Test
     public void test01() {
 

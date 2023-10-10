@@ -6,7 +6,7 @@ import pages.AmazonPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-public class TC_01 {
+public class TC01 {
     @Test
     public void test01() {
         //1- https://www.amazon.com/ sayfasina gidelim
