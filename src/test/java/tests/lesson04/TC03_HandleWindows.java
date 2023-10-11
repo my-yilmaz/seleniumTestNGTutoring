@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import pages.HerokuAppPage;
 import utilities.Driver;
 
+import javax.swing.*;
 import java.util.Set;
 
 public class TC03_HandleWindows {
@@ -14,9 +15,9 @@ public class TC03_HandleWindows {
         Driver.getDriver().get("https://the-internet.herokuapp.com/windows");
         // 2- Sayfadaki textin "Opening a new window" olduğunu doğrulayın.
         HerokuAppPage herokuAppPage = new HerokuAppPage();
-        String actualText = herokuAppPage.openingTitle.getText();
+        String actaulText = herokuAppPage.openingTitle.getText();
         String expectedText = "Opening a new window";
-        Assert.assertEquals(actualText, expectedText);
+        Assert.assertEquals(actaulText, expectedText);
         // 3- Sayfa başlığının(title) "The Internet" olduğunu doğrulayın.
         String actualTitle = Driver.getDriver().getTitle();
         String expectedTitle = "The Internet";
@@ -29,17 +30,19 @@ public class TC03_HandleWindows {
         Set<String> windowHandleSeti = Driver.getDriver().getWindowHandles();
         System.out.println("windowHandleSeti = " + windowHandleSeti);
         String ikinciSayfaWindowHandleDegeri = "";
-        for (String w: windowHandleSeti
-             ) {
-            if(!w.equals(ilkSayfaWindowHandleDegeri))
-                ikinciSayfaWindowHandleDegeri=w;
+        for (String w : windowHandleSeti
+        ) {
+            if (!w.equals(ilkSayfaWindowHandleDegeri))
+                ikinciSayfaWindowHandleDegeri = w;
         }
+
         Driver.getDriver().switchTo().window(ikinciSayfaWindowHandleDegeri);
+
         // 5- Acilan yeni pencerenin sayfa başlığının (title) "New Window" oldugunu dogrulayin.
-        String actualNewTitle= Driver.getDriver().getTitle();
+        String actualNewTitle = Driver.getDriver().getTitle();
         String expectedNewTitle = "New Window";
         Assert.assertEquals(actualNewTitle, expectedNewTitle);
-        // 6- Sayfadaki textin "New Window" olduğunu doğrulayın.
+        // 6- Sayfadaki textin "New Window" olduğunu doğrulayın
         String actualYazi = herokuAppPage.newWindowText.getText();
         String expectedYazi = "New Window";
         Assert.assertEquals(actualYazi, expectedYazi);
@@ -47,6 +50,5 @@ public class TC03_HandleWindows {
         Driver.getDriver().switchTo().window(ilkSayfaWindowHandleDegeri);
         Assert.assertEquals(actualTitle, expectedTitle);
         Driver.quitDriver();
-
     }
 }

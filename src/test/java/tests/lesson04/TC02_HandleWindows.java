@@ -35,6 +35,5 @@ public class TC02_HandleWindows {
         BestBuyPage bestBuyPage = new BestBuyPage();
         Assert.assertTrue(bestBuyPage.bestbuyLogo.isDisplayed());
         Driver.closeDriver();
-
     }
 }

@@ -48,5 +48,4 @@ public class HerokuAppPage {
     public WebElement clickHereLink;
     @FindBy(xpath = "//h3")
     public WebElement newWindowText;
-
 }

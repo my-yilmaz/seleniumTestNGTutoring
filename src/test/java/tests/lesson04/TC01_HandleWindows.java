@@ -12,13 +12,16 @@ public class TC01_HandleWindows {
     public void test01() {
         // 1- amazon ana sayfaya gidin
         Driver.getDriver().get(ConfigReader.getProperty("amazonURL"));
-        String ilkSayfaWindowHandleDegeri=Driver.getDriver().getWindowHandle();
+        String ilkSayfaWindowHandleDegeri = Driver.getDriver().getWindowHandle();
+        // ilkSayfaWindowHandleDegeri = ED14E2D7DF54E2EF082801FBA8782780
+        // Bu acilan ilk sayfanin unique hash kodudur.
         System.out.println("ilkSayfaWindowHandleDegeri = " + ilkSayfaWindowHandleDegeri);
         // 2- nutella icin arama yaptirin
         AmazonPage amazonPage = new AmazonPage();
         amazonPage.amazonSearch.sendKeys("nutella", Keys.ENTER);
         // 3- ilk urunun resmini tiklayarak farkli bir tab olarak acin
         Driver.getDriver().switchTo().newWindow(WindowType.TAB);
+        // Bu komutu kullandigimizda driver yeni bir TAB'a gecer.
         Driver.getDriver().get(ConfigReader.getProperty("amazonURL"));
         amazonPage.amazonSearch.sendKeys("nutella", Keys.ENTER);
         amazonPage.ilkUrunResmi.click();

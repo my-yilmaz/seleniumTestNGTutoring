@@ -23,5 +23,4 @@ public class AmazonPage {
     public WebElement ilkUrunResmi;
     @FindBy(xpath = "//span[@id='productTitle']")
     public WebElement urunTitleElementi;
-
 }
