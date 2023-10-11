@@ -45,13 +45,14 @@ public class PC01 {
         demoqaPage.permanentAdresKutusu.sendKeys("permanent adres ornegi11");
         softAssert.assertTrue(demoqaPage.permanentAdresKutusu.isEnabled());
         // 12 - Submit butonunun etkin oldugunu dogrulayip butona tiklayiniz
+        Driver.scroll(demoqaPage.submitButonu);
         softAssert.assertTrue(demoqaPage.submitButonu.isEnabled());
         demoqaPage.submitButonu.click();
         // 13 - Submit yapilabildigini dogrulayiniz
-        softAssert.assertTrue(demoqaPage.submitButonu.isEnabled());
+        Driver.scroll(demoqaPage.dynamicBoxfilledAfterSubmit);
+        softAssert.assertTrue(demoqaPage.dynamicBoxfilledAfterSubmit.isDisplayed());
         softAssert.assertAll();
         // 14 - Sayfayi kapatiniz
         Driver.quitDriver();
     }
-
 }

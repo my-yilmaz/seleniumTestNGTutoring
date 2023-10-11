@@ -19,4 +19,8 @@ public class AmazonPage {
     public WebElement ilkUrun;
     @FindBy(xpath = "//select[@id='searchDropdownBox']")
     public WebElement allDropDownBox;
+    @FindBy(xpath = "(//div[@class='a-section aok-relative s-image-square-aspect'])[1]")
+    public WebElement ilkUrunResmi;
+    @FindBy(xpath = "//span[@id='productTitle']")
+    public WebElement urunTitleElementi;
 }
