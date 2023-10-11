@@ -1,0 +1,19 @@
+==== Handle Dropdown ====
+➢ Adim1: Dropdown menuyu herhangi bir locator ile locate edin.
+
+         WebElement ddm=driver.findElement(By.id(“value of id"));
+
+➢ Adim 2: Yeni bir “Select” objesi olusturun ve daha once locate ettigimiz WebElement’i parametre olarak yeni objeye ekleyin
+
+        Select options=new Select(ddm);
+
+➢ Adim 3: Select class’indan kullanabileceginiz 3 yontemden biriyle dropdown menusundeki elemananlardan istediginizi secin
+
+        options.selectByIndex(1)
+
+Dropdown menusundeki elementleri Select Class’indan kullanacagimiz yontemlerle 3 sekilde secebiliriz
+     1. Index kullanarak selectByIndex();
+     2.Deger kullanarak selectByValue();
+     3.Gorunen degerini kullanarak selectByVisibleText();
+
+    Yine getOptions() methodu kullanilarak DropDown’daki tum elementler webelementlerden olusan bir listeye konabilir.

@@ -1,6 +1,11 @@
 package tests.lesson02;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -9,6 +14,7 @@ import utilities.ConfigReader;
 import utilities.Driver;
 
 import java.security.Key;
+import java.time.Duration;
 
 public class TC05_SoftAssertion {
     @Test
@@ -22,9 +28,12 @@ public class TC05_SoftAssertion {
         softAssert.assertTrue(actualTitle.contains(expected));
         //3. search kutusuna araba yazip arattirin
         HepsiBuradaPage hepsiBuradaPage = new HepsiBuradaPage();
+        Driver.wait(5);
         hepsiBuradaPage.cookiesAcceptButton.click();
-        Driver.getDriver().switchTo().alert().dismiss();
-        hepsiBuradaPage.hepsiBuradaAramaKutusu.click();
+        JavascriptExecutor jse = (JavascriptExecutor) Driver.getDriver();
+        jse.executeScript("arguments[0].click();", hepsiBuradaPage.hepsiBuradaAramaKutusu);
+
+        //hepsiBuradaPage.hepsiBuradaAramaKutusu.click();
         hepsiBuradaPage.hepsiBuradaAramaKutusu.sendKeys("araba", Keys.ENTER);
         //4. bulunan sonuc sayisini yazdirin
         System.out.println("sonucYaziElementi = " + hepsiBuradaPage.sonucYaziElementi.getText());
