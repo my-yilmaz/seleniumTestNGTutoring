@@ -18,5 +18,30 @@ public class HerokuAppPage {
     public WebElement titleCheckboxes;
     @FindBy(xpath = "//select[@id='dropdown']")
     public WebElement dropDownMenu;
+    @FindBy(xpath = "//*[text()='Click for JS Alert']")
+    public WebElement clickforJsAlert;
+    @FindBy(xpath = "//*[text()='Click for JS Confirm']")
+    public WebElement clickForJSConfirm;
+    @FindBy(xpath = "//*[text()='Click for JS Prompt']")
+    public WebElement clickforJsPrompt;
+    @FindBy(xpath = "//*[text()='You successfully clicked an alert']")
+    public WebElement successfullyClickedAlert;
+    @FindBy(xpath = "//*[@id='result']")
+    public WebElement sonucYazisi;
+    @FindBy(xpath = "//h3")
+    public WebElement iFrameTitle;
+    @FindBy(id = "mce_0_ifr")
+    public WebElement iframe;
+    @FindBy(xpath = "//*[@id='tinymce']")
+    public WebElement textBox;
+    @FindBy(linkText = "Elemental Selenium")
+    public WebElement elementalSelenium;
+    @FindBy(xpath = "//input[@type='text']")
+    public WebElement dynamicTextBox;
+    @FindBy(xpath = "(//button[@type='button'])[2]")
+    public WebElement enableButonu;
+    @FindBy(xpath = "//*[@id='message']")
+    public WebElement enabledMesaji;
+
 
 }
