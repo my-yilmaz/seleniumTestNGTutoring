@@ -11,7 +11,7 @@ public class HepsiBuradaPage {
     }
     @FindBy(xpath = "//*[@*='Ürün, kategori veya marka ara']")
     public WebElement hepsiBuradaAramaKutusu;
-    @FindBy(xpath = "//*[text()=' ürün bulduk']")
+    @FindBy(xpath = "//div/div/h1")
     public WebElement sonucYaziElementi;
     @FindBy(xpath = "//*[@id='onetrust-accept-btn-handler']")
     public WebElement cookiesAcceptButton;

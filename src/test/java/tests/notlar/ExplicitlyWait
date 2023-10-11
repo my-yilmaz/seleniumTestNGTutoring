@@ -1,0 +1,14 @@
+➢ ExplicitWait veya Explicit Waits Selenium WebDriver'da özel bir beklemeyi ifade eder.
+➢ Bu beklemeler, belirli bir koşulun belirli bir süre içinde doğru olup olmadığını kontrol eder
+   ve belirli bir koşul doğru olduğunda bir sonraki adıma geçer.
+➢ Bu yöntem, sayfanın dinamik özelliklerinin yüklenmesini beklemek için kullanılır.
+...
+➢ Örneğin, bir öğenin görünür olup olmadığını kontrol etmek istiyorsak, explicitWait yöntemini kullanabiliriz.
+   Belirli bir süre boyunca belirli bir koşul doğru olmadığı sürece bekler ve koşul doğru olduğunda bir sonraki adıma geçer.
+   Bu sayede test senaryomuzun beklenen sonucu vermesi daha sağlam hale gelir.
+...
+➢ ExplicitWait kullanımı için öncelikle WebDriverWait sınıfını kullanarak bir nesne oluşturmamız gerekir.
+  Ardından, bu nesne ile until() metodunu kullanarak beklenen koşulu belirtiriz.
+
+  WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+  wait.until(ExpectedConditions.elementToBeClickable(<WebElement>));
