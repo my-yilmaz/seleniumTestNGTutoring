@@ -42,6 +42,10 @@ public class HerokuAppPage {
     public WebElement enableButonu;
     @FindBy(xpath = "//*[@id='message']")
     public WebElement enabledMesaji;
-
-
+    @FindBy(xpath = "//h3")
+    public WebElement openingTitle;
+    @FindBy(linkText = "Click Here")
+    public WebElement clickHereLink;
+    @FindBy(xpath = "//h3")
+    public WebElement newWindowText;
 }

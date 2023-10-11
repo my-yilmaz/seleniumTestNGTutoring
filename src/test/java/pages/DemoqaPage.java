@@ -11,7 +11,7 @@ public DemoqaPage(){
 }
 @FindBy(xpath = "//img[@src='/images/Toolsqa.jpg']")
     public WebElement demoqaLogo;
-@FindBy(xpath = "//h5[text()='Elements']")
+@FindBy(xpath = "(//div[@class='avatar mx-auto white'])[1]")
     public WebElement demoqaElementsSekmesi;
     @FindBy(xpath = "//span[text()='Text Box']")
     public WebElement textBoxSekmesi;
