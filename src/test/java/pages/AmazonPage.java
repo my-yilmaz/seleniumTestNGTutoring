@@ -23,4 +23,11 @@ public class AmazonPage {
     public WebElement ilkUrunResmi;
     @FindBy(xpath = "//span[@id='productTitle']")
     public WebElement urunTitleElementi;
+    @FindBy(xpath = "//*[text()='Account & Lists']")
+    public WebElement accountLists;
+    @FindBy(xpath = "//*[text()='Create a List']")
+    public WebElement createAList;
+    @FindBy(id = "my-lists-tab")
+    public  WebElement yourLists;
+
 }
