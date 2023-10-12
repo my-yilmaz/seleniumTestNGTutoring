@@ -1,9 +1,10 @@
 package tests.lesson05;
 
+
+import org.openqa.selenium.WindowType;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.AmazonPage;
 import pages.HerokuAppPage;
 import utilities.Driver;
 
@@ -28,10 +29,10 @@ public class TC02_Actions {
         Driver.getDriver().switchTo().alert().accept();
         //5- Elemental Selenium linkine tiklayalim
         herokuAppPage.elementalSelenium.click();
-        Set<String> handleSeti =Driver.getDriver().getWindowHandles();
+        Set<String> handleSeti = Driver.getDriver().getWindowHandles();
         String ikinciSayfaWindowHandleDegeri = "";
-        for (String w:handleSeti
-             ) {
+        for (String w : handleSeti
+        ) {
             if (!w.equals(ilkSayfaWindowHandleDegeri))
                 ikinciSayfaWindowHandleDegeri = w;
         }
