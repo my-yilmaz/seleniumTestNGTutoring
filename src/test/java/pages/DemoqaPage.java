@@ -27,5 +27,19 @@ public DemoqaPage(){
     public WebElement submitButonu;
     @FindBy(xpath = "//p[@id='permanentAddress']")
     public WebElement dynamicBoxfilledAfterSubmit;
+    @FindBy(xpath = "//*[text()='Alerts, Frame & Windows']")
+    public WebElement alertsFrameWindows;
+    @FindBy(xpath = "//*[text()='Alerts']")
+    public WebElement alerts;
+    @FindBy(xpath = "(//div[@class='avatar mx-auto white'])[5]")
+    public WebElement interactions;
+    @FindBy(xpath = "//*[text()='Droppable']")
+    public WebElement droppableSekmesi;
+    @FindBy(xpath = "//*[text()='Drag me']")
+    public WebElement dragMe;
+    @FindBy(xpath = "(//div[@id='droppable'])[1]")
+    public WebElement droppleBox;
+    @FindBy(linkText = "Dropped!")
+    public WebElement droppedText;
 
 }

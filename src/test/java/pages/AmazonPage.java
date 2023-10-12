@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -23,4 +24,12 @@ public class AmazonPage {
     public WebElement ilkUrunResmi;
     @FindBy(xpath = "//span[@id='productTitle']")
     public WebElement urunTitleElementi;
+    @FindBy(xpath = "//*[text()='Account & Lists']")
+    public WebElement accountLists;
+    @FindBy(xpath = "//*[text()='Create a List']")
+    public WebElement createAList;
+    @FindBy(id = "my-lists-tab")
+    public WebElement yourLists;
+
+
 }
