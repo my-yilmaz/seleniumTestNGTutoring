@@ -5,7 +5,6 @@ import org.testng.annotations.Test;
 import pages.HerokuAppPage;
 import utilities.Driver;
 
-import javax.swing.*;
 import java.util.Set;
 
 public class TC03_HandleWindows {
@@ -28,6 +27,7 @@ public class TC03_HandleWindows {
         herokuAppPage.clickHereLink.click();
 
         Set<String> windowHandleSeti = Driver.getDriver().getWindowHandles();
+
         System.out.println("windowHandleSeti = " + windowHandleSeti);
         String ikinciSayfaWindowHandleDegeri = "";
         for (String w : windowHandleSeti
