@@ -19,5 +19,7 @@ public class FacebookPage {
     public WebElement maleRadioButonu;
     @FindBy(xpath = "//div[text()= 'Sign Up']")
     public WebElement signUpText;
+    @FindBy(xpath = "//input[@name='firstname']")
+    public  WebElement nameBox;
 
 }
