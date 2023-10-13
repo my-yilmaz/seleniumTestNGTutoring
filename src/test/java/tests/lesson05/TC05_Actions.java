@@ -8,7 +8,6 @@ import pages.FacebookPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-import java.security.Key;
 
 public class TC05_Actions {
     @Test
@@ -17,6 +16,10 @@ public class TC05_Actions {
         Driver.getDriver().get(ConfigReader.getProperty("faceURL"));
         // yeni kayit olustur butonuna basin
         FacebookPage facebookPage = new FacebookPage();
+
+        // facebookPage.allowCookiesButton.click();
+        facebookPage.createNewButton.click();
+
         // isim kutusunu locate edip,
         facebookPage.allowCookiesButton.click();
         facebookPage.createNewButton.click();
