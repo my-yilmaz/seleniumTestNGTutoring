@@ -8,6 +8,7 @@ import pages.FacebookPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
+
 public class TC05_Actions {
     @Test
     public void test01() {
@@ -15,9 +16,13 @@ public class TC05_Actions {
         Driver.getDriver().get(ConfigReader.getProperty("faceURL"));
         // yeni kayit olustur butonuna basin
         FacebookPage facebookPage = new FacebookPage();
+
         // facebookPage.allowCookiesButton.click();
         facebookPage.createNewButton.click();
+
         // isim kutusunu locate edip,
+        facebookPage.allowCookiesButton.click();
+        facebookPage.createNewButton.click();
         // geriye kalan alanlari TAB ile dolasarak formu doldurun
         Actions actions = new Actions(Driver.getDriver());
         Faker faker = new Faker();
@@ -41,7 +46,7 @@ public class TC05_Actions {
                 .sendKeys("2000")
                 .sendKeys(Keys.TAB)
                 .sendKeys(Keys.TAB)
-                .sendKeys(Keys.ARROW_UP)
+                .sendKeys(Keys.RIGHT)
                 .sendKeys(Keys.TAB)
                 .sendKeys(Keys.TAB)
                 .sendKeys(Keys.TAB)

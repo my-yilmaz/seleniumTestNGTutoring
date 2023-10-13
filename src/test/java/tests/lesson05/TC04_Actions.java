@@ -1,5 +1,6 @@
 package tests.lesson05;
 
+
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
@@ -14,6 +15,7 @@ public class TC04_Actions {
         Driver.getDriver().get(ConfigReader.getProperty("amazonURL"));
         // 2- once arama kutusuna click yapip
         AmazonPage amazonPage = new AmazonPage();
+
         Actions actions = new Actions(Driver.getDriver());
         // 3- sonra harf harf Nutella yazisini yazdiralim
         // 4- sonra da ENTER tusuna basalim

@@ -21,5 +21,4 @@ public class FacebookPage {
     public WebElement signUpText;
     @FindBy(xpath = "//input[@name='firstname']")
     public  WebElement nameBox;
-
 }
