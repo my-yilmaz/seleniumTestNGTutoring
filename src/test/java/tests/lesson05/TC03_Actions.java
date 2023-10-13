@@ -8,11 +8,12 @@ import pages.DemoqaPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
+
 public class TC03_Actions {
     @Test
     public void test01() {
         // 1- https://demoqa.com/ adresine gidelim
-        Driver.getDriver().get(ConfigReader.getProperty("demoqaURL"));
+        Driver.getDriver().get(ConfigReader.getProperty("demoqaURL"))
 
         // 2- Interactions sayfa linkine tiklayiniz
         DemoqaPage demoqaPage = new DemoqaPage();

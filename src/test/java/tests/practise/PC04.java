@@ -1,12 +1,17 @@
 package tests.practise;
 
 import org.testng.annotations.Test;
+import pages.DemoqaPage;
+import utilities.ConfigReader;
+import utilities.Driver;
 
 public class PC04 {
     @Test
     public void alertsTest() {
         // 01 - https://demoqa.com/ sitesine gidiniz
+         Driver.getDriver().get("https://demoqa.com");
         // 02 - "Alerts, Frame & Windows" sekmesine tiklayiniz
+        
         // 03 - Acilan sayfada "Alerts" sekmesine tiklayiniz
         // 04 - "Alerts" sayfasında oldugunuzu dogrulayınız
         // 05 - "Click Button to see alert" alert butonuna tiklayiniz
