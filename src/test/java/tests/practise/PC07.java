@@ -1,11 +1,13 @@
 package tests.practise;
 
 import org.testng.annotations.Test;
+import utilities.Driver;
 
 public class PC07 {
     @Test
     public void iframe() {
         //1. "http://webdriveruniversity.com/IFrame/index.html" sayfasina gidin
+        Driver.getDriver().get("http://webdriveruniversity.com/IFrame/index.html");
         //2. "Our Products" butonuna basin
         //3. "Cameras product"i tiklayin
         //4. Popup mesajini yazdirin

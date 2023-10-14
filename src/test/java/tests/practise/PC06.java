@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 public class PC06 {
     /*
-        Iki tane metod olusturun : implicitWait() , explicitWait()
+        Iki tane metod olusturun : implicitWait() , explicitWait() yani burada @ ile test metod olustur
         Iki metod icin de asagidaki adimlari test edin.
       1. https://the-internet.herokuapp.com/dynamic_controls adresine gidin.
       2. Remove butonuna basin.
@@ -12,4 +12,5 @@ public class PC06 {
       4. Add buttonuna basin
       5. It's back mesajinin gorundugunu test edin
      */
+
 }

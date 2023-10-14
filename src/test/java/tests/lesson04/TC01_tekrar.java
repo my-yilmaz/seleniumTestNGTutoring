@@ -1,7 +1,7 @@
 package tests.lesson04;
 
 
-public class TC01_tekrar {
+
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WindowType;
 import org.testng.annotations.Test;
@@ -9,7 +9,6 @@ import pages.AmazonPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-import java.security.Key;
 
 public class TC01_tekrar {
     @Test

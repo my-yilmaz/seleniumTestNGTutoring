@@ -27,7 +27,7 @@ public class TC02 {
         zeroBankPage.onlineBanking.click();
         Driver.wait(2);
         //6. Pay Bills sayfasina gidin
-        zeroBankPage.payBills.click();
+        zeroBankPage.payBillsButon.click();
         //7. amount kismina yatirmak istediginiz herhangi bir miktari yazin
         zeroBankPage.amountBox.sendKeys("55");
         //8. tarih kismina “2020-09-10” yazdirin

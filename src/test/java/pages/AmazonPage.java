@@ -30,4 +30,8 @@ public class AmazonPage {
     public WebElement createAList;
     @FindBy(id = "my-lists-tab")
     public  WebElement yourLists;
+    @FindBy(xpath = "(//a[text()='Start here.'])[1]")
+    public WebElement startHere;
+    @FindBy(xpath = "//*[@id='ap_customer_name']")
+    public WebElement yourNameBox;
 }
