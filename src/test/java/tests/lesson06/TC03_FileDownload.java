@@ -3,11 +3,8 @@ package tests.lesson06;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.HerokuAppPage;
-import utilities.ConfigReader;
 import utilities.Driver;
-
 import java.nio.file.Files;
-import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class TC03_FileDownload {
@@ -18,10 +15,17 @@ public class TC03_FileDownload {
         // 2. code.txt dosyasını indirelim
         HerokuAppPage herokuAppPage = new HerokuAppPage();
         herokuAppPage.testTxt.click();
-        Driver.wait(2);
+
+        // macBook
+        // Driver.wait(2);
         // 3. dosyanın başarıyla indirilip indirilmediğini test edelim
-        String dosyaYolu = System.getProperty("user.home")+ "/Downloads/test.txt";
+        // String dosyaYolu = System.getProperty("user.home")+ "/Downloads/test.txt";
+        // Assert.assertTrue(Files.exists(Paths.get(dosyaYolu)));
+        // Users/korkutaltay/Downloads/test.txt
+      
+        Driver.wait(5);
+        // 3. dosyanın başarıyla indirilip indirilmediğini test edelim
+        String dosyaYolu = System.getProperty("user.home") + "\\Downloads\\test.txt";
         Assert.assertTrue(Files.exists(Paths.get(dosyaYolu)));
-        //Users/korkutaltay/Downloads/test.txt
     }
 }

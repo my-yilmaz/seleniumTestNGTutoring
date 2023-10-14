@@ -52,7 +52,7 @@ public class HerokuAppPage {
     public WebElement cizgiliAlan;
     @FindBy(tagName = "h1")
     public WebElement makeSureText;
-    @FindBy(xpath = "//a[text()='test.txt']")
+    @FindBy(xpath = "//*[text()='test.txt']")
     public WebElement testTxt;
     @FindBy(id = "file-upload")
     public WebElement fileUpload;
@@ -60,5 +60,4 @@ public class HerokuAppPage {
     public WebElement fileSubmit;
     @FindBy(tagName = "h3")
     public WebElement fileUploadedText;
-
 }

@@ -34,4 +34,7 @@ public class AmazonPage {
     public WebElement startHere;
     @FindBy(xpath = "//*[@id='ap_customer_name']")
     public WebElement yourNameBox;
+    @FindBy(xpath = "(//span[text()='Sign in'])[2]")
+    public WebElement signin2;
+
 }
