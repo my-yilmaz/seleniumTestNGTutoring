@@ -12,10 +12,22 @@ public class DemoqaPage {
 
     @FindBy(xpath = "//img[@src='/images/Toolsqa.jpg']")
     public WebElement demoqaLogo;
-    @FindBy(xpath = "(//div[@class='avatar mx-auto white'])[1]")
+    @FindBy(xpath = "//*[text()='Elements']")
     public WebElement demoqaElementsSekmesi;
     @FindBy(xpath = "//span[text()='Text Box']")
     public WebElement textBoxSekmesi;
+    @FindBy(xpath = "//*[text()='Check Box']")
+    public WebElement checkBoxSekmesi;
+    @FindBy(xpath = "(//*[@class='rct-icon rct-icon-uncheck'])[3]")
+    public WebElement notesCheckBox;
+    @FindBy(xpath = "//*[@class='text-success']")
+    public WebElement notesSuccessYazisi;
+    @FindBy(xpath = "//*[@class='rct-title']")
+    public WebElement homeButonCheckBoxSayfasi;
+    @FindBy(xpath = "//*[@class='rct-icon rct-icon-expand-all']")
+    public WebElement plusSign;
+    @FindBy(xpath = "//*[@class='rct-icon rct-icon-collapse-all']")
+    public WebElement minusSign;
     @FindBy(xpath = "//input[@id='userName']")
     public WebElement fullNameBox;
     @FindBy(xpath = "//input[@id='userEmail']")
@@ -38,5 +50,20 @@ public class DemoqaPage {
     public WebElement droppableBox;
     @FindBy(xpath = "//*[text()='Dropped!']")
     public WebElement droppedText;
+    @FindBy(xpath = "//*[text()='Radio Button']")
+    public WebElement radioButton;
+    @FindBy(xpath = "//*[@for='yesRadio']")
+    public WebElement yesRadio;
+    @FindBy(xpath = "//*[@class='text-success']")
+    public WebElement yesSuccess;
+    @FindBy(xpath = "//*[@for='impressiveRadio']")
+    public WebElement impressiveRadio;
+    @FindBy(xpath = "//*[@class='text-success']")
+    public WebElement impressiveSuccess;
+    @FindBy(xpath = "//*[@for='noRadio']")
+    public WebElement noRadio;
+
+
+
 
 }
