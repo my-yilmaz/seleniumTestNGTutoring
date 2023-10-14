@@ -41,7 +41,7 @@ public class TC05_Actions {
                 .sendKeys("2000")
                 .sendKeys(Keys.TAB)
                 .sendKeys(Keys.TAB)
-                .sendKeys(Keys.ARROW_UP)
+                .sendKeys(Keys.RIGHT)
                 .sendKeys(Keys.TAB)
                 .sendKeys(Keys.TAB)
                 .sendKeys(Keys.TAB)

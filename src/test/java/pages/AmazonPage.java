@@ -29,5 +29,7 @@ public class AmazonPage {
     @FindBy(xpath = "//*[text()='Create a List']")
     public WebElement createAList;
     @FindBy(id = "my-lists-tab")
-    public  WebElement yourLists;
+    public WebElement yourLists;
+    @FindBy(xpath = "(//span[text()='Sign in'])[2]")
+    public WebElement signin2;
 }
