@@ -9,6 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
+import pages.HotelPage;
 
 import java.time.Duration;
 
@@ -93,5 +94,15 @@ public class Driver {
     public static void scroll(WebElement element) {
         JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
         js.executeScript("arguments[0].scrollIntoView(true);", element);
+    }
+    public static void girisYap(){
+        // 1 - login( ) metodun oluşturun ve oturum açın.
+        //     ○ Username : manager ○ Password : Manager2!
+        // 2 - https://qa-environment.concorthotel.com/admin/HotelRoomAdmin adresine gidin
+        Driver.getDriver().get("http://qa-environment.concorthotel.com/admin/HotelRoomAdmin");
+        HotelPage hotelPage =new HotelPage();
+        hotelPage.usernameBox.sendKeys("manager");
+        hotelPage.passwordBox.sendKeys("Manager2!");
+        hotelPage.submitButton.click();
     }
 }
