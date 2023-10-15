@@ -20,7 +20,7 @@ public class PC03 {
         //2. Sign in butonuna basin
         ZeroBankPage zeroBankPage = new ZeroBankPage();
         //3. Login kutusuna “username” yazin
-      // boyle yapacaktim, sonra actions kullanayim dedim zeroBankPage.userLoginBox.sendKeys("username", Keys.TAB);
+        // boyle yapacaktim, sonra actions kullanayim dedim zeroBankPage.userLoginBox.sendKeys("username", Keys.TAB);
         //4. Password kutusuna “password.” yazin
         //5. Sign in tusuna basin
         Actions actions = new Actions(Driver.getDriver());
@@ -40,7 +40,7 @@ public class PC03 {
         zeroBankPage.purchaseForeCuButonu.click();
         //8. “Currency” drop down menusunden Eurozone’u secin
         Select select = new Select(zeroBankPage.currencyDDM);
-       // zeroBankPage.currencyDDM.click();
+        // zeroBankPage.currencyDDM.click();
         select.selectByVisibleText("Eurozone (euro)");
         //9. “amount” kutusuna bir sayi girin
         // TAB ile gecermisim, gereksiz locate almis bulundum
@@ -54,7 +54,7 @@ public class PC03 {
         zeroBankPage.purchaseButonu.click();
         //13. “Foreign currency cash was successfully purchased.” yazisinin ciktigini kontrol edin.
         Assert.assertTrue(zeroBankPage.foreCurSuccessYazisi.isDisplayed());
-                Driver.wait(2);
+        Driver.wait(2);
         Driver.quitDriver();
     }
 }

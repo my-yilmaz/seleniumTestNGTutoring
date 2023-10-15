@@ -43,6 +43,7 @@ public class PC02 {
         Driver.getDriver().get(ConfigReader.getProperty("demoqaURL"));
         // 02 - "Elements" sekmesine tiklayiniz
         DemoqaPage demoqaPage = new DemoqaPage();
+        Driver.scroll(demoqaPage.demoqaElementsSekmesi);
         demoqaPage.demoqaElementsSekmesi.click();
         // 03 - Acilan sayfada "Radio Button" sekmesine tiklayiniz
         demoqaPage.radioButton.click();
